@@ -1,4 +1,6 @@
 # DeMolQuiz
+(c) Frederik Rousseau
+Licensed (Open Sourced) under GNU GPL v2
 
 [DUTCH]
 De De Mol quiz.
@@ -11,3 +13,5 @@ De Mol quiz is a traditional quiz game, based on a popular Dutch/Flemish game ca
 [TECHNICAL]
 The game is written in Visual Studio using C#. With one Window.
 Some pieces can be optimized, check out the Issues to get an idea.
+
+You can use Visual Studio Community Edition for free to build the software. If you like, I can provide the binary.
