@@ -1,0 +1,27 @@
+﻿<Window x:Class="DeMolWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeMolWPF"
+        mc:Ignorable="d"
+        Title="De Mol" Height="593" Width="800">
+    <Grid x:Name="LayoutRoot" Background="#FFF9F7F7" Margin="10,10,2,4.5" RenderTransformOrigin="0.379,0.464">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="39*"/>
+            <ColumnDefinition Width="314*"/>
+            <ColumnDefinition Width="179*"/>
+            <ColumnDefinition Width="212*"/>
+            <ColumnDefinition Width="15*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="Vraag" Margin="60.5,122,23.001,336.5" TextWrapping="Wrap" Text="Vraag 1:" FontSize="24" TextAlignment="Center" Grid.ColumnSpan="3" Grid.Column="2"/>
+        <RadioButton x:Name="AntwoordA" Content="Ja" FontSize="36" Margin="-0.001,255.5,-17.713,211" Grid.Column="3"/>
+        <RadioButton x:Name="AntwoordB" Content="Neen" FontSize="36" Margin="-0.001,341.5,-17.713,117.5" Grid.Column="3"/>
+        <Button x:Name="Volgende" Content="Start!" Margin="-29.681,458,-1.112,56" Click="EventClickVolgende" Grid.Column="3"/>
+        <TextBlock x:Name="Feedback" Margin="-66.793,33,-17.713,430.5" TextWrapping="Wrap" Text="Selecteer LINKS je naam en druk Start!" TextAlignment="Center" FontSize="24" Grid.Column="3"/>
+        <TextBlock x:Name="timerText" Grid.Column="2" HorizontalAlignment="Left" Height="100.5" Margin="-19.083,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117.583" FontSize="72"/>
+        <ComboBox x:Name="naamList" Grid.Column="2" Height="30" Margin="-28.95,60,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="134.578"/>
+
+    </Grid>
+</Window>
